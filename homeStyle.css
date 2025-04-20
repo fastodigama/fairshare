@@ -1,0 +1,263 @@
+html, body {
+    height: 100%; 
+    overflow: auto; 
+}
+html{
+    box-sizing: border-box;
+}
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+
+}
+
+body{
+    background: none;
+    color: #333;
+}
+
+#header, #footer{
+    background-color: #3F7D58;
+    margin:20px;
+    color: #EFEFEF;
+    height: 8.125rem;
+    padding: 0 2rem;
+    border-radius: 16px;
+    box-shadow: 10px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.menu, #logo, #weather-container{
+    color: #EFEFEF;
+    outline: none;
+    
+}
+#weather-container{
+    text-transform: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+a{
+    text-decoration: none;
+    color: #EFEFEF;
+}
+a:visited{
+    color: #EFEFEF;
+}
+
+#wrapper-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#left-sidebar{
+    flex:1;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    box-shadow: 10px 0 15px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+}
+
+.member-card-box{
+    width: 100%;
+    max-width: 14rem;
+    height: 11.8125rem;
+    aspect-ratio: 9 / 12;
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+    border-radius: 16px;
+    background-color: #EF9651;
+    opacity: 100%;
+    margin: 20px 20px;
+    
+
+}
+
+.member-card-cover{
+    width: 14rem;
+    height:  5.4375rem;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    background-image: url(adam-kool-ndN00KmbJ1c-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.profile-img{
+    width: 45%;
+    max-width: 99px;
+    aspect-ratio: 1 / 1;
+    height: 99px;
+    background-color: #EFEFEF;
+    border: 3px solid wheat;
+    margin-top: 20px;
+    border-radius: 50%;
+    background-image: url(placeholder.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.card-content{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0 0.5rem;
+    font-weight: bolder;
+}
+
+.member-name{
+    font-size: inherit;
+    color: #EFEFEF;
+}
+
+.member-role, .member-level{
+    font-size: 13px;
+    color: black;
+}
+#summary-container{
+    flex:3;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 10px 0 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#summary-title{
+    color: #EC5228;
+    text-transform: lowercase;
+    font-size: 3rem;
+    font-weight: 500;
+}
+#summary-subtitle{
+    font-weight: 200;
+    font-style: italic;
+    color: #3F7D58;
+}
+
+#summary-paragraph{
+    margin: 25px;
+    width: 32.125rem;
+
+}
+.summary-member-name, .member-proportion{
+    font-weight: 700;
+}
+#expense-title{
+    color: #3F7D58;
+    margin-bottom: 10px;
+}
+
+#expense-container, #income-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    width: 80%;
+}
+
+#expense-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    width: 80%;
+}
+
+
+.expense-card {
+    background-color: #F8F5E9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    width: 220px;
+}
+  
+.expense-card h4 {
+    margin-top: 0;
+    text-align: left;
+    color: #3F7D58;
+
+}
+
+.share-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+  
+#right-sidebar{
+    flex:1;
+    width: 100%;
+    height: 100%;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center; 
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 10px 0 15px rgba(0, 0, 0, 0.3);
+    color: #3F7D58;
+}
+.key-value{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+.pair{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 px;
+}
+
+
+
+#edit,
+#reset {
+    background-color: #5cb85c;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+#reset {
+    background-color: #EF9651;
+    margin-left: 20px;
+}
+#reset:hover{
+    background-color: #d32f2f;
+}
+
+
+#edit:hover{
+    background-color: #4cae4c;
+}
+
+

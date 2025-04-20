@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landingStyle.css">
+    <link rel="stylesheet" href="expensesFormStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Expenses Form</title>
+</head>
+<body>
+    <h1>Input Form</h1>
+       <section id="inputForm"> 
+        <form method="GET" action="home.html" id="membersForm" name="members_form">
+            <fieldset id="membersFieldset">
+                
+                <fieldset id="membersFieldset">
+                    <legend>Please enter members name and monthly salary</legend>
+                    <div>
+                        <label for="member1Name">member 1 name:</label>
+                    </div>
+                    <div>
+                        <input type="text" name="member1Name" id="member1Name" class="member-name">
+                    </div>
+                    <div>
+                        <label for="member1Income">member 1 income:</label>
+                    </div>
+                    <div>
+                        <input type="number" name="member1Income" step="0.01" id="member1Income" class="member-income">
+                    </div>  
+                    
+                    <div>
+                        <label for="member2Name">member 2 name:</label>
+                    </div>
+                    <div>
+                        <input type="text" name="member2Name" id="member2Name" class="member-name">
+                    </div>
+                    <div>
+                        <label for="member2Income">member 2 income:</label>
+                    </div>
+                    <div>
+                        <input type="number" name="member2Income" step="0.01" id="member2Income" class="member-income">
+                    </div> 
+                    
+                </fieldset>
+                
+                <fieldset id="expensesFieldset">
+                    <legend>Please enter expenses amounts</legend>
+                
+                    <div>
+                        <label for="rent">Rent:</label>
+                        <input type="number" name="rent" id="rent" step="0.01" class="expense">
+                    </div>
+                
+                    <div>
+                        <label for="hydroBill">Hydro Bill:</label>
+                        <input type="number" name="hydroBill" id="hydroBill" step="0.01" class="expense">
+                    </div>
+                
+                    <div>
+                        <label for="waterBill">Water Bill:</label>
+                        <input type="number" name="waterBill" id="waterBill" step="0.01" class="expense">
+                    </div>
+                
+                    <div>
+                        <label for="gasBill">Gas Bill:</label>
+                        <input type="number" name="gasBill" id="gasBill" step="0.01" class="expense">
+                    </div>
+                
+                    <div>
+                        <label for="internetBill">Internet Bill:</label>
+                        <input type="number" name="internetBill" id="internetBill" step="0.01" class="expense">
+                    </div>
+                
+                    <div>
+                        <label for="groceriesBill">Groceries and Food:</label>
+                        <input type="number" name="groceriesBill" id="groceriesBill" step="0.01" class="expense">
+                    </div>
+                
+                    <div>
+                        <label for="carPayment">Car Payment:</label>
+                        <input type="number" name="carPayment" id="carPayment" step="0.01" class="expense">
+                    </div>
+                
+                    <div>
+                        <label for="insurance">Insurance:</label>
+                        <input type="number" name="insurance" id="insurance" step="0.01" class="expense">
+                    </div>
+                </fieldset>
+                
+        
+            <input type="submit" value="save" id="save"> 
+            <input type="reset" value="reset" id="reset">
+        </form>
+    </section>
+    
+    <script src="expensesForm.js"></script>
+</body>
+</html>

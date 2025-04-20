@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="landingStyle.css">
+    <link rel="stylesheet" type="text/css" href="homeStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <h2 id="logo"><a href="landing.html">FairShare</a></h2>
+        <nav class="nav-menu">
+            <ul class="menu">
+                <li class="nav-item"><a href="#/home">home</a></li>
+                <li class="nav-item"><a href="#">members</a></li>
+                <li class="nav-item"><a href="#">Pricing</a></li>
+                <li class="nav-item"><a href="#">learn</a></li>
+            </ul>
+        </nav>
+        <div id="weather-container">
+            <h3>
+				<span id="location"></span> 
+				<span id="icon"></span>
+				<span id="error"></span>
+			</h3>
+			<p> 
+				<span id="temperature" class="displayText"></span>
+			</p>			
+			<p>
+				<span id="conditions" class="displayText"></span>
+			</p>
+            <p>wind speed:               
+				 <span id="windspeed" class="displayText"></span>
+            </p>
+        </div>
+    </header>
+    <div id="wrapper-container">
+        <aside id="left-sidebar">
+            <section aria-label="members">
+                
+            </section>
+        </aside>
+        <main id="summary-container">
+            <h1 id="summary-title"> Fairshare Summary </h1>
+            <h2 id="summary-subtitle">Proportional Contribution Split</h2>
+            <p id="summary-paragraph"> <span class="summary-member-name"></span> with the highest income, will contribute <span class="member-proportion"></span> of the expenses,
+                while <span class="summary-member-name"></span> will contribute <span class="member-proportion"></span>, based on their income proportions. This ensures a fair share
+                for everyone.</p>
+            <h3 id="expense-title">Expense Breakdown</h3>
+            <div id="expense-card-container">
+
+
+
+            </div>
+                           
+        </main>
+        <aside id="right-sidebar">
+            <h2 class="right-sidebar-title">income</h2>
+            <div id="income-container" class="key-value">
+                <div class="pair">
+                    <p>Name</p>
+                    <p>Income</p>
+
+                </div>
+            </div>
+            <h2 class="right-sidebar-title">Expenses</h2>
+            <div id="expense-container" class="key-value">
+                <div class="pair">
+                    <p>Key</p>
+                    <p>Value</p>
+                </div>
+            </div>
+            <div>
+            <form action="expenses.html" method="get" id="edit-reset" name="edit_reset">
+            <input type="submit" value="Edit" id="edit"> 
+            <input type="reset" value="reset" id="reset">
+            </div>
+        </form>
+
+        </aside>
+
+    </div>
+    <footer id="footer">
+        <h2 id="logo">FairShare</h2>
+        &copy; 2025 - fairshare - All rights reserved 
+    </footer>
+
+    <script src="mainScript.js"></script>
+</body>
+
+</html>
