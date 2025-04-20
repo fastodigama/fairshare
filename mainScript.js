@@ -152,7 +152,7 @@ function calculateProportion() {
     var out_icon = document.getElementById("icon");
     var out_error = document.getElementById("error");
     var city = "Toronto";
-    var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ac41d318a4f21336682e06af57f62226&units=metric`;
+    var url = `YOUR OWN URL AND API KEY`;
            
         // XMLHttpRequest object to retrieve API data
         var xhr = new XMLHttpRequest();
